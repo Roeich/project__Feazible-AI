@@ -207,10 +207,6 @@ p,ul,input,button{
 
   .scrolled_header .header {
     padding: 1.5rem 0rem;
-    border-color: #ffffff55;
-    background-color: var(--bg_darkblue);
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
   }
 
   .navbar-brand,
@@ -222,7 +218,7 @@ p,ul,input,button{
   .menu_toggleBtn {
     width: 36px;
     height: 36px;
-    background: #ffffff55;
+    background: #ffffff20;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
   }
@@ -254,7 +250,7 @@ p,ul,input,button{
     z-index: 1000;
     top: 0px;
     left: 0px;
-    background-color: var(--bg_darkblue);
+    background-color: var(--bg_dark);
     width: 100%;
     height: 100%;
     padding: 75px 16px 16px;
