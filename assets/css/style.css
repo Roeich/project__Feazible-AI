@@ -40,6 +40,7 @@
   --bg_dark:#000515;
   --bg_dark2:#1C2030;
   --bg_gray: #33353F;
+  --bg_light:#71717133; /* 20% */
   --bg_white: #ffffff;
 }
 body {
@@ -92,15 +93,20 @@ p,ul,input,button{
   font-size: var(--fs_20);
   padding: 0.5rem 1rem;
   text-transform: capitalize;
+  border-radius: 5px;
 }
 .btn_primary{
   color: var(--c_white);
   background: var(--bg_primaryGrd);
   border: 2px solid #63BFEF;
   box-shadow: 0px 4px 20px rgba(243, 225, 225, 0.55), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
 }
 
+.btn_warning{
+  background: linear-gradient(180deg, #F58B21 -121.31%, #F5B419 80.97%);
+  border: 2px solid #FFCD5C;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 @media(min-width:1200px){
   .container{
     max-width: 1510px;
@@ -613,10 +619,25 @@ h2,
   max-width: 100%;
   background-color: var(--bg_dark2);
   margin: auto;
-  padding: 2.75rem;
+  padding: 2.75rem 10rem 8rem;
+  position: relative;
+}
+.feedback_sliderBox::before{
+  content: "";
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  right: 2rem;
+  bottom: 2rem;
+  border: 5px solid;
+  border-right: none;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #00ECFF 0%, #00BED7 34%, #006288 100%);
+  clip-path: polygon(0% 0%,20% 0%,20% 50% ,100% 50%, 100% 100%,0% 100%);
+  pointer-events: none;
 }
 .feedback_slider{
-
+  margin-top: -12rem;
 }
 .feedback_item{
   position: relative;
@@ -629,7 +650,7 @@ h2,
   width: 360px;
   height: 360px;
   padding: 28px;
-  margin: -180px auto 2rem;
+  margin: auto auto 2rem;
   background-image: url("../img/home/client-photo-bg.svg");
   background-repeat: no-repeat;
   background-size: 100%;
@@ -642,11 +663,146 @@ h2,
   object-fit: cover;
 }
 .feedback_clientInfo{
-  font-size: var(--fs_32);
+  font-size: var(--fs_46);
+  font-weight: 600;
   color: var(--c_warning);
+  margin-bottom: 2rem;
 }
-.feedback_message{}
+.feedback_clientInfo::after{
+  content: "";
+  display: block;
+  width: 120px;
+  border-bottom: 1px solid var(--c_white);
+}
+.feedback_message{
+  font-size: var(--fs_24);
+  font-family: var(--ff_roboto);
+  padding-top: 3rem;
+  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.57812 15.0293V25.3125L7.70874 20.1777L12.8394 15.043V9.89454V4.74609H7.70874H2.57812V15.0293ZM17.1606 15.0293V25.3125L22.2913 20.1777L27.4219 15.043V9.89454V4.74609H22.2913H17.1606V15.0293Z' fill='white'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 1.5rem;
+}
+
+.feedback_sliderControl{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--ff_manrope);
+}
+.feedback_sliderControl .current_number{
+  font-size: var(--fs_56);
+}
+.feedback_sliderControl .total_number{
+  font-size: var(--fs_16);
+}
+.feedback_sliderControl .btn{
+  padding: 0.3rem 0.8rem;
+  color: var(--c_white);
+  box-shadow: none !important;
+}
 /* ... end feedback section ... */
+
+/* ... start case study section ... */
+.caseStudy_section{
+  padding: 5rem 0rem;
+  background: var(--bg_light);
+  position: relative;
+}
+.caseStudy_section::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  font-size: 1240px;
+  width: 1em;
+  height: 0.8831em;
+  border-radius: 50%;
+  background: rgba(1, 122, 186, 0.1);
+  filter: blur(116.05px);
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%,-30%);
+  pointer-events: none;
+  user-select: none;
+}
+.caseStudy_section .section_title{
+  margin-bottom: 4rem;
+}
+.caseStudy_title{
+  font-size: var(--fs_32);
+  font-weight: 700;
+}
+.border_left{
+  display: flex;
+}
+.border_left::before{
+  content: "";
+  display: block;
+  width: 7px;
+  margin-right: 0.5rem;
+  background: linear-gradient(90deg, #00ECFF -68.96%, #00BED7 -12.36%, #006288 100%);
+
+}
+.caseStudy_desc,
+.caseStudy_desc ul{
+  font-size: var(--fs_20);
+  line-height: 1.5;
+}
+.caseStudy_desc li{
+  margin-bottom: 0.6rem;
+}
+
+/* ... end case study section ... */
+
+/* ... start ready to connect section ... */
+.extraInfo_section{
+  padding: 5rem 0rem;
+  background: var(--bg_primaryGrd);
+}
+.extraInfo_content{
+  text-align: center;
+}
+.extraInfo_section .section_title{
+  font-size: var(--fs_70);
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+.extraInfo_section .section_desc{
+  font-size: var(--fs_32);
+  margin-bottom: 4rem;
+}
+/* ... end ready to connect section ... */
+
+/* ... start faq section ... */
+.faq_section{
+  padding: 5rem 0rem;
+}
+.faq_section .section_title{
+  margin-bottom: 0.3rem;
+}
+.faq_section .section_subtitle{
+  font-size: var(--fs_20);
+  color: var(--c_whiteLt2);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.accordion{
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+}
+.accordion-item{
+  color: var(--c_white);
+  background: transparent;
+  border-color: var(--c_whiteLt2);
+}
+.accordion-button{
+  font-size: var(--fs_24);
+  color: var(--c_white) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 1.4rem 1rem;
+}
+/* ... end faq section ... */
 
 
 
