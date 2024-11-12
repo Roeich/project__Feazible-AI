@@ -375,11 +375,14 @@ p,ul,input,button{
 .hero_desc{
   margin-bottom: 6.2rem;
 }
+.hero_imgBox{
+  mix-blend-mode: lighten;
+}
 .hero_img{
   -webkit-transform: translate(-11%,20%) scale(1.86);
       -ms-transform: translate(-11%,20%) scale(1.86);
           transform: translate(-11%,20%) scale(1.86);
-  mix-blend-mode: lighten;
+  /* mix-blend-mode: lighten; */
 }
 @media(max-width:991.98px){
   .main {
@@ -456,9 +459,9 @@ h2,
 }
 .intro_imgBox{
   margin-left: -5%;
+  mix-blend-mode: lighten;
 }
 .intro_imgBox img{
-  mix-blend-mode: lighten;
   -webkit-transform: scale(1.45);
       -ms-transform: scale(1.45);
           transform: scale(1.45);
@@ -481,7 +484,7 @@ h2,
 .challenges_section{
   padding: 5.5rem 0rem 12rem;
   position: relative;
-  /* background-image: url("../img/home/challenges_bg.png");
+  /* background-image: url("../img/home/challenges_bg.webp");
   background-size: 26.25rem;
   background-repeat: no-repeat;
   background-position: left bottom; */

@@ -50,3 +50,12 @@ $(document).ready(function() {
     });
     /* ___________________ end home page ___________________ */
 });
+
+$(window).on('load', function() {
+    // ----- scroll trigger animation
+    AOS.init({
+        easing: 'ease-out',
+        duration: 800,
+        once: true
+    });
+})
