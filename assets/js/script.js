@@ -56,6 +56,6 @@ $(window).on('load', function() {
     AOS.init({
         easing: 'ease-out',
         duration: 800,
-        once: true
+        // once: true
     });
 })
