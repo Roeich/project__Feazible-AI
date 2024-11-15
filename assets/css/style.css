@@ -1162,9 +1162,9 @@ h2,
   background-image: url("../img/chatbot/looper-bg.webp");
   background-repeat: no-repeat;
   background-position: top right;
-  padding: 22.8125rem 0rem 20rem;
+  padding: 22.8125rem 0rem 21.5rem;
   animation: bg_load 2s linear 0s 1 forwards;
-  background-size: 70%;
+  background-size: 85.5rem;
 }
 .hero_section2 .hero_content{
   padding: 0rem;
@@ -1177,6 +1177,11 @@ h2,
     background-size: 1200px;
   }
 } */
+@media(max-width:1199.98px){
+  .hero_section2{
+    background-size: 90rem;
+  }
+}
 @media(max-width:991.98px){
   .sm_none{
     display: none;
@@ -1186,11 +1191,35 @@ h2,
 
 /* ... start why ai chatbot. section ... */
 .wac_section{
-  padding: 15rem 0rem;
+  padding: 13rem 0rem 9rem;
+  position: relative;
+}
+.wac_section::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  font-size: 93.9375rem;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background: rgba(1, 122, 186, 0.1);
+  -webkit-filter: blur(116.05px);
+          filter: blur(116.05px);
+  left: 50%;
+  top: 30%;
+  -webkit-transform: translate(-50%,-30%);
+      -ms-transform: translate(-50%,-30%);
+          transform: translate(-50%,-30%);
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+
 }
 .wac_content{}
 .wac_section .section_title{
-  margin-bottom: 8em;
+  margin-bottom: 8.5em;
 }
 .wac_items{
   display: flex;
@@ -1264,14 +1293,53 @@ h2,
   font-size: var(--fs_19);
   margin-bottom: 0.875rem;
 }
+@media(max-width:991.98px){
+  .wac_itemIconBox {
+    font-size: 4rem;
+  }
+}
+@media(max-width:767.98px){
+  .wac_section .section_title {
+    margin-bottom: 3em;
+  }
+  .wac_item{
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+  .wac_item:nth-of-type(2n+1) {
+    transform: translateY(0rem);
+  }
+}
 /* ... end why ai chatbot. section ... */
 
 /* ... start how it works section ... */
 .hiw_section{
   padding: 7.5rem 0rem;
+  position: relative;
+}
+.hiw_section::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 15%;
+  font-size: 73.625rem;
+  width: 1em;
+  height: 0.562em;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: rgba(1, 122, 186, 0.15);
+  -webkit-filter: blur(7.2531rem);
+          filter: blur(7.2531rem);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .hiw_section .section_title{
-  margin-bottom: 4.5em;
+  margin-bottom: 4em;
 }
 .hiw_list{
   --bs-gutter-x: 1.875rem;
@@ -1349,15 +1417,47 @@ h2,
   background-clip: text;
   text-fill-color: transparent;
 }
+@media(max-width:991.98px){
+  .hiw_itemNum {
+    font-size: 3rem;
+  }
+}
+@media(max-width:767.98px){
+  .hiw_section .section_title {
+    margin-bottom: 2em;
+  }
+}
 /* ... end how it works section ... */
 
 /* ... start why ai chatbot. section ... */
 .woc_section{
-  padding: 15rem 0rem;
+  padding: 10rem 0rem 8rem;
+  position: relative;
+}
+.woc_section::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 30%;
+  font-size: 73.625rem;
+  width: 1em;
+  height: 0.562em;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: rgba(1, 122, 186, 0.15);
+  -webkit-filter: blur(7.2531rem);
+          filter: blur(7.2531rem);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 .woc_content{}
 .woc_section .section_title{
-  margin-bottom: 8em;
+  margin-bottom: 8.5em;
 }
 .woc_items{
   display: flex;
@@ -1444,6 +1544,18 @@ h2,
 }
 .woc_itemDesc:last-of-type{
   margin-bottom: 0rem;
+}
+@media(max-width:767.98px){
+  .woc_section .section_title {
+    margin-bottom: 5.5em;
+  }
+  .woc_item{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .woc_item:nth-of-type(2n+1) {
+    transform: translateY(0rem);
+  }
 }
 /* ... end why ai chatbot. section ... */
 /* _______________________ end chatbot page _______________________ */
