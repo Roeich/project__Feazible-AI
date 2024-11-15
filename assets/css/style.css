@@ -1163,7 +1163,8 @@ h2,
   background-repeat: no-repeat;
   background-position: top right;
   padding: 22.8125rem 0rem 21.5rem;
-  animation: bg_load 2s linear 0s 1 forwards;
+  -webkit-animation: bg_load 2s linear 0s 1 forwards;
+          animation: bg_load 2s linear 0s 1 forwards;
   background-size: 85.5rem;
 }
 .hero_section2 .hero_content{
@@ -1222,9 +1223,15 @@ h2,
   margin-bottom: 8.5em;
 }
 .wac_items{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 8rem;
 }
 .wac_item{
@@ -1232,15 +1239,24 @@ h2,
   margin-bottom: 1rem;
 }
 .wac_item:nth-of-type(2n+1){
-  transform: translateY(-8rem);
+  -webkit-transform: translateY(-8rem);
+      -ms-transform: translateY(-8rem);
+          transform: translateY(-8rem);
 }
 .wac_itemBox{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .wac_item:nth-of-type(2n+2) .wac_itemBox{
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 .wac_itemIconBox{
   font-size: 6rem;
@@ -1263,15 +1279,18 @@ h2,
   height: 1.7083em;
   border: 2px solid var(--c_primary);
   border-radius: 50%;
+  display: -ms-grid;
   display: grid;
   place-items: center;
   background: var(--bg_dark3);
-  box-shadow: 0px 4px 20px rgba(118, 199, 229, 0.6);
+  -webkit-box-shadow: 0px 4px 20px rgba(118, 199, 229, 0.6);
+          box-shadow: 0px 4px 20px rgba(118, 199, 229, 0.6);
 }
 .wac_itemIcon img{
   width: 1em;
   height: 1em;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .wac_itemContent{}
 .wac_itemNum{
@@ -1281,11 +1300,15 @@ h2,
   font-size: 3rem;
   line-height: 1;
   text-transform: capitalize;
+  background: -webkit-gradient(linear, left top, right top, color-stop(-68.96%, #00ECFF), color-stop(-12.36%, #00BED7), to(#006288));
+  background: -o-linear-gradient(left, #00ECFF -68.96%, #00BED7 -12.36%, #006288 100%);
   background: linear-gradient(90deg, #00ECFF -68.96%, #00BED7 -12.36%, #006288 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   margin-bottom: 0.5rem;
 }
@@ -1307,7 +1330,9 @@ h2,
     margin-bottom: 3rem;
   }
   .wac_item:nth-of-type(2n+1) {
-    transform: translateY(0rem);
+    -webkit-transform: translateY(0rem);
+        -ms-transform: translateY(0rem);
+            transform: translateY(0rem);
   }
 }
 /* ... end why ai chatbot. section ... */
@@ -1392,10 +1417,13 @@ h2,
   height: 2.1563em;
   border-radius: 50%;
   border: 2px solid var(--c_primary);
+  display: -ms-grid;
   display: grid;
   place-items: center;
   background: var(--bg_dark3);
-  transform: translate(-50%,50%);
+  -webkit-transform: translate(-50%,50%);
+      -ms-transform: translate(-50%,50%);
+          transform: translate(-50%,50%);
 }
 .hiw_itemNum::before{
   content: "";
@@ -1411,6 +1439,8 @@ h2,
 }
 .hiw_itemNum span{
   text-transform: capitalize;
+  background: -webkit-gradient(linear, left top, right top, color-stop(-68.96%, #00ECFF), color-stop(-12.36%, #00BED7), to(#006288));
+  background: -o-linear-gradient(left, #00ECFF -68.96%, #00BED7 -12.36%, #006288 100%);
   background: linear-gradient(90deg, #00ECFF -68.96%, #00BED7 -12.36%, #006288 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1460,9 +1490,15 @@ h2,
   margin-bottom: 8.5em;
 }
 .woc_items{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 8rem;
 }
 .woc_item{
@@ -1471,7 +1507,9 @@ h2,
 }
 .woc_item:nth-of-type(2n+1){
   /* margin-top: -7rem; */
-  transform: translateY(-7rem);
+  -webkit-transform: translateY(-7rem);
+      -ms-transform: translateY(-7rem);
+          transform: translateY(-7rem);
 }
 .woc_itemBox{
   padding: 1.25rem;
@@ -1509,13 +1547,19 @@ h2,
 }
 .woc_itemContent::before{
   left: 1px;
-  transform: translateX(-100%);
-  clip-path: polygon(100% 0%,100% 100%, 0% 50%);
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-clip-path: polygon(100% 0%,100% 100%, 0% 50%);
+          clip-path: polygon(100% 0%,100% 100%, 0% 50%);
 }
 .woc_itemContent::after{
   right: 1px;
-  transform: translateX(100%);
-  clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
 }
 .woc_itemNum{
   font-family: var(--ff_work_sans);
@@ -1524,11 +1568,15 @@ h2,
   font-size: 3rem;
   line-height: 1;
   text-transform: capitalize;
+  background: -webkit-gradient(linear, left top, right top, color-stop(-68.96%, #00ECFF), color-stop(-12.36%, #00BED7), to(#006288));
+  background: -o-linear-gradient(left, #00ECFF -68.96%, #00BED7 -12.36%, #006288 100%);
   background: linear-gradient(90deg, #00ECFF -68.96%, #00BED7 -12.36%, #006288 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   margin-bottom: 0.5rem;
 }
@@ -1554,7 +1602,9 @@ h2,
     margin-bottom: 2rem;
   }
   .woc_item:nth-of-type(2n+1) {
-    transform: translateY(0rem);
+    -webkit-transform: translateY(0rem);
+        -ms-transform: translateY(0rem);
+            transform: translateY(0rem);
   }
 }
 /* ... end why ai chatbot. section ... */
