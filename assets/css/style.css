@@ -1184,6 +1184,9 @@ h2,
   }
 }
 @media(max-width:991.98px){
+  .hero_section2{
+    background-size: 75.9%;
+  }
   .sm_none{
     display: none;
   }
