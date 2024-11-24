@@ -129,6 +129,9 @@ p,ul,input,button{
   .container_sm{
     max-width: 72.5rem; /* 1126px */
   }
+  .container_md{
+    max-width: 80.625rem; /* 1265px */
+  }
   .container_lg{
     max-width: 100rem; /* 1600px */
   }
@@ -1612,3 +1615,126 @@ h2,
 }
 /* ... end why ai chatbot. section ... */
 /* _______________________ end chatbot page _______________________ */
+
+/* _______________________ start chatbot 4 page _______________________ */
+/* ... start hero section ... */
+.hero_section3{
+  background-image: url("../img/chatbot-4/hero-bg.jpg");
+  background-repeat: no-repeat;
+  padding: 22.8125rem 0rem 21.5rem;
+  background-size: cover;
+}
+.hero_section3 .hero_content{
+  padding: 0rem;
+  text-align: center;
+}
+@media(max-width:1199.98px){
+  .hero_section3{
+    background-size: 90rem;
+  }
+}
+@media(max-width:991.98px){
+  .hero_section3{
+    background-size: 75.9%;
+  }
+}
+/* ... end hero section ... */
+
+/* ... start Benefits of Al Integration for Your Business section ... */
+.benefits_section{
+  padding: 11.5rem 0rem 7.5rem;
+  position: relative;
+}
+.benefits_section::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 15%;
+  font-size: 73.625rem;
+  width: 1em;
+  height: 0.562em;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: rgba(1, 122, 186, 0.15);
+  -webkit-filter: blur(7.2531rem);
+          filter: blur(7.2531rem);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.benefits_section .section_title{
+  margin-bottom: 5rem;
+}
+.benefit_list{
+
+}
+.benefit_item{
+  margin-bottom: 4.75rem;
+  width: 84%;
+}
+.benefit_item:nth-of-type(2n+1){
+  margin-left: auto;
+}
+.benefit_content{
+  display: flex;
+  align-items: center;
+  background-color: #0F2238;
+  border-radius: 50rem;
+  padding: 0.75rem 4rem 0.75rem 15rem;
+  position: relative;
+  min-height: 10.25rem;
+}
+.benefit_iconBox{
+  position: absolute;
+  top: 50%;
+  left: 0rem;
+  width: 13.125rem;
+  height: 13.125rem;
+  background-image: url("../img/chatbot-4/step-bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+}
+.benefit_num{
+  color: var(--c_warning);
+  font-size: var(--fs_32);
+  font-family: var(--ff_work_sans);
+  font-weight: 700;
+  position: absolute;
+  top: 8%;
+  left: 71%;
+}
+.benefit_icon_1{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 4rem;
+  height: 4rem;
+  transform: translate(-50%,-50%);
+  object-fit: contain;
+}
+.benefit_icon_2{
+  position: absolute;
+  left: 50%;
+  top: 110%;
+  width: 4rem;
+  height: 4rem;
+  transform: translate(-50%,0%);
+  object-fit: contain;
+}
+.benefit_contentBox{
+  flex-grow: 1;
+}
+.benefit_title{
+  color: var(--c_primary);
+  font-size: var(--fs_19);
+}
+.benefit_desc:last-of-type{
+  margin-bottom: 0rem;
+}
+/* ... end Benefits of Al Integration for Your Business section ... */
+/* _______________________ end chatbot 4 page _______________________ */
