@@ -1773,7 +1773,6 @@ h2,
 .service_list{
   --bs-gutter-x: 1.875rem;
   --bs-gutter-y: 1.875rem;
-  margin-bottom: 9.4rem;
 }
 .service_item{
   padding: 9.75rem 3.2rem 4.5rem;
@@ -1803,8 +1802,8 @@ h2,
 .service_itemIcon{
   width: 11.625rem;
   position: absolute;
-  top: -3.625rem;
-  left: 1.25rem;
+  top: -3.8rem;
+  left: 1.75rem;
 }
 .service_itemIcon::before{
   content: "";
@@ -1844,4 +1843,192 @@ h2,
   margin-bottom: 3.75rem;
 }
 /* ... end Our Services section ... */
+
+/* ... start Our Process section ... */
+.ourProcess_section{
+  padding: 8.5rem 0rem;
+  position: relative;
+}
+.ourProcess_section::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 30%;
+  font-size: 73.625rem;
+  width: 1em;
+  height: 0.562em;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: rgba(1, 122, 186, 0.15);
+  -webkit-filter: blur(7.2531rem);
+          filter: blur(7.2531rem);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.ourProcess_section .section_desc{
+  margin-bottom: 6.875rem;
+}
+.ourProcess_list{
+  display: flex;
+  margin-bottom: 6.875rem;
+}
+.ourProcess_item{
+  flex-grow: 1;
+  position: relative;
+}
+.ourProcess_item:last-of-type{
+  flex-grow: 0;
+}
+.ourProcess_item::before{
+  content: "";
+  display: block;
+  height: 0.3rem;
+  position: absolute;
+  top: 4.08rem;
+  left: 11.5rem;
+  right: 3.5rem;
+  z-index: -1;
+  transform: translateY(-50%);
+  background-image: linear-gradient(to right,#006288, #00B4CF);
+}
+.ourProcess_item:last-of-type::before{
+  content: none;
+}
+.ourProcess_item::after,
+.ourProcess_num::after{
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 4rem;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+.ourProcess_item::after{
+  right: 3rem;
+  background-color: #00B4CF;
+}
+.ourProcess_num::after{
+  top: 3.8rem;
+  left: 11rem;
+  background-color: #006288;
+}
+
+.ourProcess_item:last-of-type::after,
+.ourProcess_item:last-of-type .ourProcess_num::after{
+  content: none;
+}
+
+.ourProcess_num{
+  color: var(--c_dark);
+  font-size: var(--fs_46);
+  font-weight: 700;
+  width: 7.8131rem;
+  height: 7.8131rem;
+  background: linear-gradient(90deg, #00ECFF -68.96%, #006288 100%);
+  border: 0.3091rem solid #01AECA;
+  box-shadow: -0.9273rem 0.9273rem 0.6182rem rgba(0, 0, 0, 0.25);
+  border-radius: 0.6182rem;
+  display: grid;
+  place-items: center;
+  margin-bottom: 4.375rem;
+  position: relative;
+}
+.ourProcess_num::before{
+  position: absolute;
+  z-index: -1;
+  content: "";
+  display: block;
+  width: 70%;
+  height: 100%;
+  top: 0px;
+  right: 0px;
+  background-color: var(--bg_white);
+  border-radius: 0rem 1rem 1rem 0rem;
+  transform: scale(1.25);
+}
+.ourProcess_content{
+  max-width: 19.0625rem;
+}
+/* ... end Our Process section ... */
+
+/* ... start Our team section ... */
+.team_section{
+  padding: 8.5rem 0rem;
+  position: relative;
+}
+
+.member_list{
+
+}
+.member_item{
+  background: #0F2238;
+  border-radius: 50rem;
+  padding:2rem 2.5rem 8.125rem;
+  text-align: center;
+  height: 100%;
+}
+.member_imgBox{
+  position: relative;
+  margin-bottom: 2.625rem;
+}
+.member_imgBox::before{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+.member_img{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: var(--bg_dark);
+  border: 1px solid var(--c_primary);
+}
+.member_name{
+  font-size: var(--fs_20);
+  font-family: var(--ff_manrope);
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+.member_role{
+  font-size: var(--fs_20);
+  font-family: var(--ff_manrope);
+  margin-bottom: 1.5rem;
+}
+.member_details{
+  font-size: var(--fs_16);
+}
+/* ... end Our team section ... */
+
+/* ... start Got Questions? section ... */
+.extraInfo_section2{
+  padding: 7.5rem 0rem;
+  background-color: #71717133;
+}
+.extraInfo_section2 .section_title{
+  font-size: var(--fs_70);
+  margin-bottom: 1.5rem;
+}
+/* ... end Got Questions? section ... */
+
+/* ... start subscribe section ... */
+.subscribe_section{
+  padding: 5.625rem 0rem;
+  background-color: var(--bg_dark);
+}
+.mw_max{
+  min-width: max-content !important;
+}
+/* ... end subscribe section ... */
 /* _______________________ end chatbot 4 page _______________________ */
