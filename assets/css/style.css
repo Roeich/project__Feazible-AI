@@ -132,6 +132,9 @@ p,ul,input,button{
   .container_md{
     max-width: 80.625rem; /* 1265px */
   }
+  .container_md2{
+    max-width: 88.75rem; /* 1396px */
+  }
   .container_lg{
     max-width: 100rem; /* 1600px */
   }
@@ -1737,4 +1740,108 @@ h2,
   margin-bottom: 0rem;
 }
 /* ... end Benefits of Al Integration for Your Business section ... */
+
+/* ... start Our Services section ... */
+.services_section{
+  padding: 7.5rem 0rem 8.75rem;
+  position: relative;
+}
+.services_section::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 30%;
+  font-size: 73.625rem;
+  width: 1em;
+  height: 0.562em;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: rgba(1, 122, 186, 0.15);
+  -webkit-filter: blur(7.2531rem);
+          filter: blur(7.2531rem);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.services_section .section_desc{
+  margin-bottom: 10rem;
+}
+.service_list{
+  --bs-gutter-x: 1.875rem;
+  --bs-gutter-y: 1.875rem;
+  margin-bottom: 9.4rem;
+}
+.service_item{
+  padding: 9.75rem 3.2rem 4.5rem;
+  background: linear-gradient(to right, #00B3CE, #006288);
+  
+  border-radius: 0.75rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.service_item>*{
+  position: relative;
+}
+.service_item::before{
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 2px; 
+  bottom: 2px; 
+  left: 2px;
+  border-radius: inherit; 
+  background: var(--bg_dark3);
+  -webkit-backdrop-filter: blur(20.3px);
+          backdrop-filter: blur(20.3px);
+}
+.service_itemIcon{
+  width: 11.625rem;
+  position: absolute;
+  top: -3.625rem;
+  left: 1.25rem;
+}
+.service_itemIcon::before{
+  content: "";
+  display: block;
+  padding-bottom: 94.09%;
+  background-image: url("../img/chatbot-4/icon-bg.svg");
+  background-repeat: none;
+  background-size: contain;
+}
+.service_itemIcon img{
+  width: 40.32%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.service_title{
+  font-size: var(--fs_24);
+  font-family: var(--ff_manrope);
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+}
+.feature_list{
+  margin-bottom: 2rem;
+  padding-left: 0rem;
+  list-style: none;
+}
+.feature_list li{
+  margin-bottom: 1rem;
+  background-image: url("../img/home/icon-check.svg");
+  background-repeat: no-repeat;
+  background-size: 1em 1em;
+  padding-left: 1.5em;
+  background-position: left top 0.2em;
+}
+.service_item .feature_list{
+  margin-bottom: 3.75rem;
+}
+/* ... end Our Services section ... */
 /* _______________________ end chatbot 4 page _______________________ */
