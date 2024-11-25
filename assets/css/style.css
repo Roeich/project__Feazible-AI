@@ -1631,14 +1631,12 @@ h2,
   padding: 0rem;
   text-align: center;
 }
-@media(max-width:1199.98px){
-  .hero_section3{
-    background-size: 90rem;
-  }
+.hero_section3 .hero_title{
+  margin-right: auto;
 }
 @media(max-width:991.98px){
   .hero_section3{
-    background-size: 75.9%;
+    padding: 18rem 0rem 12rem;
   }
 }
 /* ... end hero section ... */
@@ -1683,8 +1681,12 @@ h2,
   margin-left: auto;
 }
 .benefit_content{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #0F2238;
   border-radius: 50rem;
   padding: 0.75rem 4rem 0.75rem 15rem;
@@ -1700,7 +1702,9 @@ h2,
   background-image: url("../img/chatbot-4/step-bg.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .benefit_num{
   color: var(--c_warning);
@@ -1717,8 +1721,11 @@ h2,
   top: 50%;
   width: 4rem;
   height: 4rem;
-  transform: translate(-50%,-50%);
-  object-fit: contain;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .benefit_icon_2{
   position: absolute;
@@ -1726,11 +1733,16 @@ h2,
   top: 110%;
   width: 4rem;
   height: 4rem;
-  transform: translate(-50%,0%);
-  object-fit: contain;
+  -webkit-transform: translate(-50%,0%);
+      -ms-transform: translate(-50%,0%);
+          transform: translate(-50%,0%);
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .benefit_contentBox{
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .benefit_title{
   color: var(--c_primary);
@@ -1738,6 +1750,42 @@ h2,
 }
 .benefit_desc:last-of-type{
   margin-bottom: 0rem;
+}
+@media(max-width:767.98px){
+  .benefits_section {
+    padding: 6rem 0rem;
+  }
+  .benefit_item{
+    width: 95%;
+  }
+}
+@media(max-width:575.98px){
+  .benefit_item {
+    width: 100%;
+  }
+  .benefit_item:last-of-type{
+    margin-bottom: 0rem;
+  }
+  .benefit_iconBox {
+    top: 0%;
+    width: 10rem;
+    height: 10rem;
+    -webkit-transform: translateY(-16%);
+        -ms-transform: translateY(-16%);
+            transform: translateY(-16%);
+  }
+  .benefit_icon_2{
+    display: none;
+  }
+  .benefit_num {
+    font-size: var(--fs_24);
+    top: 8%;
+    left: 71%;
+  }
+  .benefit_content {
+    border-radius: 3rem;
+    padding: 10rem 2rem 2rem;
+  }
 }
 /* ... end Benefits of Al Integration for Your Business section ... */
 
@@ -1776,12 +1824,19 @@ h2,
 }
 .service_item{
   padding: 9.75rem 3.2rem 4.5rem;
+  background: -webkit-gradient(linear, left top, right top, from(#00B3CE), to(#006288));
+  background: -o-linear-gradient(left, #00B3CE, #006288);
   background: linear-gradient(to right, #00B3CE, #006288);
   
   border-radius: 0.75rem;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-height: 100%;
 }
 .service_item>*{
@@ -1818,7 +1873,9 @@ h2,
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
 }
 .service_title{
   font-size: var(--fs_24);
@@ -1841,6 +1898,28 @@ h2,
 }
 .service_item .feature_list{
   margin-bottom: 3.75rem;
+}
+@media(max-width:991.98px){
+  .service_item {
+    padding: 6rem 2rem 3rem;
+  }
+  .service_itemIcon {
+    width: 8rem;
+  }
+}
+@media(max-width:767.98px){
+  .services_section {
+    padding: 5rem 0rem;
+  }
+  .services_section .section_desc {
+    margin-bottom: 5rem;
+  }
+  .service_item {
+    margin-top: 4rem;
+    min-height: -webkit-max-content;
+    min-height: -moz-max-content;
+    min-height: max-content;
+  }
 }
 /* ... end Our Services section ... */
 
@@ -1874,15 +1953,21 @@ h2,
   margin-bottom: 6.875rem;
 }
 .ourProcess_list{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 6.875rem;
 }
 .ourProcess_item{
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   position: relative;
 }
 .ourProcess_item:last-of-type{
-  flex-grow: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
 }
 .ourProcess_item::before{
   content: "";
@@ -1893,7 +1978,11 @@ h2,
   left: 11.5rem;
   right: 3.5rem;
   z-index: -1;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-image: -webkit-gradient(linear,left top, right top,from(#006288), to(#00B4CF));
+  background-image: -o-linear-gradient(left,#006288, #00B4CF);
   background-image: linear-gradient(to right,#006288, #00B4CF);
 }
 .ourProcess_item:last-of-type::before{
@@ -1909,7 +1998,9 @@ h2,
   top: 4rem;
   z-index: -1;
   border-radius: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 .ourProcess_item::after{
   right: 3rem;
@@ -1932,10 +2023,14 @@ h2,
   font-weight: 700;
   width: 7.8131rem;
   height: 7.8131rem;
+  background: -webkit-gradient(linear, left top, right top, color-stop(-68.96%, #00ECFF), to(#006288));
+  background: -o-linear-gradient(left, #00ECFF -68.96%, #006288 100%);
   background: linear-gradient(90deg, #00ECFF -68.96%, #006288 100%);
   border: 0.3091rem solid #01AECA;
-  box-shadow: -0.9273rem 0.9273rem 0.6182rem rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: -0.9273rem 0.9273rem 0.6182rem rgba(0, 0, 0, 0.25);
+          box-shadow: -0.9273rem 0.9273rem 0.6182rem rgba(0, 0, 0, 0.25);
   border-radius: 0.6182rem;
+  display: -ms-grid;
   display: grid;
   place-items: center;
   margin-bottom: 4.375rem;
@@ -1952,10 +2047,45 @@ h2,
   right: 0px;
   background-color: var(--bg_white);
   border-radius: 0rem 1rem 1rem 0rem;
-  transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+      -ms-transform: scale(1.25);
+          transform: scale(1.25);
 }
 .ourProcess_content{
   max-width: 19.0625rem;
+}
+@media(max-width:767.98px){
+  .ourProcess_list{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ourProcess_item{
+    margin-bottom: 4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .ourProcess_item:last-of-type{
+    margin-bottom: 0rem;
+  }
+  .ourProcess_item::before,
+  .ourProcess_item::after,
+  .ourProcess_num::after{
+    content: none;
+  }
+  .ourProcess_num {
+    width: 6rem;
+    min-width: 6rem;
+    height: 5rem;
+    margin-bottom: 0rem;
+    margin-right: 2rem;
+  }
+  .ourProcess_content {
+    max-width: 100%;
+  }
+
 }
 /* ... end Our Process section ... */
 
@@ -1991,7 +2121,8 @@ h2,
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-color: var(--bg_dark);
   border: 1px solid var(--c_primary);
 }
@@ -2020,6 +2151,11 @@ h2,
   font-size: var(--fs_70);
   margin-bottom: 1.5rem;
 }
+@media(max-width:991.98px){
+  .member_item {
+    padding: 1.5rem 1.5rem 6rem;
+  }
+}
 /* ... end Got Questions? section ... */
 
 /* ... start subscribe section ... */
@@ -2028,6 +2164,8 @@ h2,
   background-color: var(--bg_dark);
 }
 .mw_max{
+  min-width: -webkit-max-content !important;
+  min-width: -moz-max-content !important;
   min-width: max-content !important;
 }
 /* ... end subscribe section ... */
