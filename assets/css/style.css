@@ -2192,9 +2192,104 @@ h2,
   }
 }
 /* ... end hero section ... */
-/* ... end hero section ... */
+
+/* ... start section 3 ... */
 .section__3{
   padding: 8rem 0rem;
 }
-/* ... end hero section ... */
+/* ... end section 3 ... */
+
+/* ... start Our 3-Step Process to AI-Powered Bookkeeping section ... */
+.processStep_section{
+  padding: 9.375rem 0rem;
+  position: relative;
+}
+.processStep_section::before{
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 15%;
+  font-size: 73.625rem;
+  width: 1em;
+  height: 0.562em;
+  border-radius: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: rgba(1, 122, 186, 0.15);
+  -webkit-filter: blur(7.2531rem);
+          filter: blur(7.2531rem);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.processStep_section .section_desc{
+  margin-bottom: 6rem;
+}
+.processStep_list{
+  --bs-gutter-x: 1.875rem;
+  --bs-gutter-y: 2.5rem;
+}
+.processStep_item{
+  padding: 0rem 1.2rem 2.25rem;
+  background: -o-linear-gradient(left,#00BED7,#006288);
+  background: -webkit-gradient(linear,left top, right top,from(#00BED7),to(#006288));
+  background: linear-gradient(to right,#00BED7,#006288);
+  border-radius: 0.75rem;
+  position: relative;
+  min-height: 100%;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  height: 100%;
+}
+.processStep_item>*{
+  position: relative;
+}
+.processStep_item::before{
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: 1px; 
+  bottom: 1px; 
+  left: 1px;
+  border-radius: inherit; 
+  background: #0e1d32;
+  -webkit-backdrop-filter: blur(20.3px);
+          backdrop-filter: blur(20.3px);
+}
+.processStep_title{
+  font-size: var(--fs_19);
+  margin-bottom: 0.9em;
+  background: #011120;
+  box-shadow: 0rem 0.25rem 0.25rem rgba(0, 236, 255, 0.2);
+  border-radius: 0.3125rem;
+  padding: 0.875rem 2.25rem;
+  margin: -0.5rem -2rem 2rem;
+  border: 1px solid #006288;
+  position: relative;
+}
+.processStep_title::before{
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background-color: inherit;
+  border: inherit;
+  position: absolute;
+  z-index: -1;
+  left: 0rem;
+  bottom: 0rem;
+  transform: translate(25%,50%) rotate(45deg);
+}
+.processStep_desc{
+
+}
+@media(max-width:767.98px){
+  .processStep_section {
+    padding: 5rem 0rem;
+  }
+}
+/* ... end Our 3-Step Process to AI-Powered Bookkeeping section ... */
 /* _______________________ end chatbot 5 page _______________________ */
