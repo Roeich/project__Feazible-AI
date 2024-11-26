@@ -1824,8 +1824,8 @@ h2,
 }
 .service_item{
   padding: 9.75rem 3.2rem 4.5rem;
-  background: -webkit-gradient(linear, left top, right top, from(#00B3CE), to(#006288));
   background: -o-linear-gradient(left, #00B3CE, #006288);
+  background: -webkit-gradient(linear, left top, right top, from(#00B3CE), to(#006288));
   background: linear-gradient(to right, #00B3CE, #006288);
   
   border-radius: 0.75rem;
@@ -1981,8 +1981,8 @@ h2,
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-image: -webkit-gradient(linear,left top, right top,from(#006288), to(#00B4CF));
   background-image: -o-linear-gradient(left,#006288, #00B4CF);
+  background-image: -webkit-gradient(linear,left top, right top,from(#006288), to(#00B4CF));
   background-image: linear-gradient(to right,#006288, #00B4CF);
 }
 .ourProcess_item:last-of-type::before{
@@ -2023,8 +2023,8 @@ h2,
   font-weight: 700;
   width: 7.8131rem;
   height: 7.8131rem;
-  background: -webkit-gradient(linear, left top, right top, color-stop(-68.96%, #00ECFF), to(#006288));
   background: -o-linear-gradient(left, #00ECFF -68.96%, #006288 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(-68.96%, #00ECFF), to(#006288));
   background: linear-gradient(90deg, #00ECFF -68.96%, #006288 100%);
   border: 0.3091rem solid #01AECA;
   -webkit-box-shadow: -0.9273rem 0.9273rem 0.6182rem rgba(0, 0, 0, 0.25);
@@ -2263,7 +2263,8 @@ h2,
   font-size: var(--fs_19);
   margin-bottom: 0.9em;
   background: #011120;
-  box-shadow: 0rem 0.25rem 0.25rem rgba(0, 236, 255, 0.2);
+  -webkit-box-shadow: 0rem 0.25rem 0.25rem rgba(0, 236, 255, 0.2);
+          box-shadow: 0rem 0.25rem 0.25rem rgba(0, 236, 255, 0.2);
   border-radius: 0.3125rem;
   padding: 0.875rem 2.25rem;
   margin: -0.5rem -2rem 2rem;
@@ -2281,7 +2282,9 @@ h2,
   z-index: -1;
   left: 0rem;
   bottom: 0rem;
-  transform: translate(25%,50%) rotate(45deg);
+  -webkit-transform: translate(25%,50%) rotate(45deg);
+      -ms-transform: translate(25%,50%) rotate(45deg);
+          transform: translate(25%,50%) rotate(45deg);
 }
 .processStep_desc{
 
@@ -2289,6 +2292,103 @@ h2,
 @media(max-width:767.98px){
   .processStep_section {
     padding: 5rem 0rem;
+  }
+}
+
+/*  */
+.processStep__list{
+
+}
+.processStep__item{
+  padding: 3.4375rem 2.25rem 3.4375rem 14.875rem;
+  background: -o-linear-gradient(left,#00BED7,#006288);
+  background: -webkit-gradient(linear,left top, right top,from(#00BED7),to(#006288));
+  background: linear-gradient(to right,#00BED7,#006288);
+  border-radius: 0.75rem;
+  position: relative;
+  height: 100%;
+  margin: 8.375rem 0rem 0rem 6.25rem;
+}
+.processStep__item>*{
+  position: relative;
+}
+.processStep__item::before{
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: 1px; 
+  bottom: 1px; 
+  left: 1px;
+  border-radius: inherit; 
+  background: #0e1d32;
+  -webkit-backdrop-filter: blur(20.3px);
+          backdrop-filter: blur(20.3px);
+}
+.processStep__num{
+  width: 17.125rem;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  -webkit-transform: translate(-34%,-34%);
+      -ms-transform: translate(-34%,-34%);
+          transform: translate(-34%,-34%);
+}
+.processStep__num::before{
+  content: "";
+  display: block;
+  padding-bottom: 82.12%;
+  background-image: url("../img/chatbot-5/step_num_bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.processStep__num span{
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+  font-family: var(--ff_work_sans);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  text-transform: capitalize;
+  background: -webkit-gradient(linear, left top, right top, color-stop(-68.96%, #00ECFF), to(#006288));
+  background: -o-linear-gradient(left, #00ECFF -68.96%, #006288 100%);
+  background: linear-gradient(90deg, #00ECFF -68.96%, #006288 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.processStep__title{
+  color: var(--c_primary);
+  font-size: var(--fs_19);
+  margin-bottom: 1rem;
+}
+.processStep__list li{
+  margin-bottom: 1rem;
+}
+@media(max-width:991.98px){
+  .processStep__item {
+    padding: 3rem 2.25rem 3rem 9rem;
+  }
+  .processStep__num {
+    width: 13rem;
+  }
+}
+
+@media(max-width:575.98px){
+  .processStep__item {
+    padding: 8rem 2rem 2rem;
+    margin: 8.375rem 0rem 0rem 0rem;
+  }
+  .processStep__num {
+    -webkit-transform: translate(10%,-34%);
+        -ms-transform: translate(10%,-34%);
+            transform: translate(10%,-34%);
   }
 }
 /* ... end Our 3-Step Process to AI-Powered Bookkeeping section ... */
