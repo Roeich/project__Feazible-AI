@@ -2170,3 +2170,31 @@ h2,
 }
 /* ... end subscribe section ... */
 /* _______________________ end chatbot 4 page _______________________ */
+
+/* _______________________ start chatbot 5 page _______________________ */
+/* ... start hero section ... */
+.hero_section4{
+  background-image: url("../img/chatbot-5/hero-bg.jpg");
+  background-repeat: no-repeat;
+  padding: 22.8125rem 0rem 21.5rem;
+  background-size: cover;
+}
+.hero_section4 .hero_content{
+  padding: 0rem;
+  text-align: center;
+}
+.hero_section4 .hero_title{
+  margin-right: auto;
+}
+@media(max-width:991.98px){
+  .hero_section4{
+    padding: 18rem 0rem 12rem;
+  }
+}
+/* ... end hero section ... */
+/* ... end hero section ... */
+.section__3{
+  padding: 8rem 0rem;
+}
+/* ... end hero section ... */
+/* _______________________ end chatbot 5 page _______________________ */
